@@ -5,7 +5,7 @@ FindFiesta is an app created for ComS 309 at Iowa State University. It was a sem
 
 ## Visuals
 Check out our project video here!
-[![Video Displaying Features of FindFiesta](https://img.youtube.com/vi/SL0lsWL-1Os&list=PL6BdlkdKLEB9h28E61p7hHIJW62bzfRjM&index=7&t=2s/0.jpg)]([https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE](https://www.youtube.com/watch?v=SL0lsWL-1Os&list=PL6BdlkdKLEB9h28E61p7hHIJW62bzfRjM&index=7&t=2s))
+[Check out our video on YouTube](https://www.youtube.com/watch?v=SL0lsWL-1Os&list=PL6BdlkdKLEB9h28E61p7hHIJW62bzfRjM&index=7&t=2s)
 
 ## Usage
 The app is intended to be used for people to find items they've lost or help others do the same. However, our app is not published and the server is only intended for classroom use. 
