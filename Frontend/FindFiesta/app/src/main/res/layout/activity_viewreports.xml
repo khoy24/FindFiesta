@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_viewreports"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary">
+
+    <Button
+        android:id="@+id/backButton90"
+        android:layout_width="100dp"
+        android:layout_height="57dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <TextView
+        android:id="@+id/reportedUserText"
+        android:layout_width="327dp"
+        android:layout_height="75dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <TextView
+        android:id="@+id/reportcommentsText"
+        android:layout_width="326dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="121dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="No comments"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportedUserText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/disableAccountButton"
+        android:layout_width="164dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="112dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="Disable Reported Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteReportButton"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="Delete Report"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disableAccountButton"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <EditText
+        android:id="@+id/modNotes"
+        android:layout_width="313dp"
+        android:layout_height="74dp"
+        android:ems="10"
+        android:hint="Enter moderator notes"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/submitModNotesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportcommentsText" />
+
+    <Button
+        android:id="@+id/submitModNotesButton"
+        android:layout_width="140dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/disableAccountButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/viewReportedAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="View Account"
+        app:layout_constraintBottom_toTopOf="@+id/reportcommentsText"
+        app:layout_constraintEnd_toStartOf="@+id/viewReportedPostButton"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportedUserText"
+        app:layout_constraintVertical_bias="0.493" />
+
+    <Button
+        android:id="@+id/viewReportedPostButton"
+        android:layout_width="127dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="View Post"
+        app:layout_constraintBottom_toTopOf="@+id/reportcommentsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportedUserText"
+        app:layout_constraintVertical_bias="0.467" />
+
+    <Button
+        android:id="@+id/deleteReportedPostButton"
+        android:layout_width="141dp"
+        android:layout_height="65dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="Delete Reported Post"
+        app:layout_constraintBottom_toTopOf="@+id/deleteReportButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toEndOf="@+id/disableAccountButton"
+        app:layout_constraintTop_toBottomOf="@+id/submitModNotesButton"
+        app:layout_constraintVertical_bias="0.605" />
+</androidx.constraintlayout.widget.ConstraintLayout>

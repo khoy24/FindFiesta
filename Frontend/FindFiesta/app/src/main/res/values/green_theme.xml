@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Green" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/greenbg</item>
+        <item name="colorSecondary">@color/sage</item>
+        <item name="colorTertiary">@color/lightolive</item>
+    </style>
+
+    <style name="Theme.Green" parent="Base.Theme.FindFiesta" />
+</resources>

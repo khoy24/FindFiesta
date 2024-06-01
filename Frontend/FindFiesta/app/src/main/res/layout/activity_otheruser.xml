@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_otheruser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/OtherProfilePicture"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/account_icon"
+        app:layout_constraintBottom_toTopOf="@+id/otherUsernameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/otherUsernameText"
+        android:layout_width="325dp"
+        android:layout_height="68dp"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <Button
+        android:id="@+id/followUserButton"
+        android:layout_width="156dp"
+        android:layout_height="49dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="Follow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherUsernameText"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <Button
+        android:id="@+id/otherUsersFollowersButton"
+        android:layout_width="169dp"
+        android:layout_height="51dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="Followers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unfollowButton"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <ListView
+        android:id="@+id/followersList"
+        android:layout_width="287dp"
+        android:layout_height="209dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherUsersFollowersButton"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <Button
+        android:id="@+id/unfollowButton"
+        android:layout_width="169dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="Unfollow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/followUserButton" />
+
+    <Button
+        android:id="@+id/backButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="back"
+        app:layout_constraintBottom_toTopOf="@+id/followUserButton"
+        app:layout_constraintEnd_toStartOf="@+id/OtherProfilePicture"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <Button
+        android:id="@+id/removeFollowerButton"
+        android:layout_width="162dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="remove follower"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toEndOf="@+id/followUserButton"
+        app:layout_constraintTop_toBottomOf="@+id/otherUsernameText"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <Button
+        android:id="@+id/reportUserButton"
+        android:layout_width="105dp"
+        android:layout_height="96dp"
+        android:backgroundTint="?attr/colorTertiary"
+        android:text="Report User"
+        app:layout_constraintBottom_toTopOf="@+id/followersList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toEndOf="@+id/otherUsersFollowersButton"
+        app:layout_constraintTop_toBottomOf="@+id/removeFollowerButton"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <Button
+        android:id="@+id/approveModButton"
+        android:layout_width="163dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="?attr/colorTertiary"
+        android:text="approve mod"
+        app:layout_constraintBottom_toTopOf="@+id/reportUserButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeFollowerButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/declineModButton"
+        android:layout_width="167dp"
+        android:layout_height="52dp"
+        android:backgroundTint="?attr/colorTertiary"
+        android:text="Decline Mod"
+        app:layout_constraintBottom_toTopOf="@+id/followersList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/otherUsersFollowersButton"
+        app:layout_constraintTop_toBottomOf="@+id/approveModButton"
+        app:layout_constraintVertical_bias="0.257" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
